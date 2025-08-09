@@ -7,6 +7,21 @@ import { notFound } from "next/navigation"
 import BrandButton from "@/components/brand-button"
 import ProjectTimeline from "@/components/project-timeline"
 import { Github, ExternalLink } from "lucide-react"
+import type { Metadata } from "next";
+
+export function generateMetadata({ params }: { params: { id: string } }): Metadata {
+    const all = projects as Project[];
+    const project = all.find(p => p.id === params.id);
+
+    if (!project) {
+        return {};
+    }
+
+    return {
+        title: project.title,
+        description: project.description,
+    };
+}
 
 export default function Page({ params }: { params: { id: string } }) {
   const project = (projects as Project[]).find((p) => p.id === params.id)

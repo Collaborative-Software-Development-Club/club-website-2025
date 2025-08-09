@@ -2,6 +2,12 @@ import projectsData from "@/data/projects.json"
 import type { Project } from "@/lib/types"
 import ProjectCard from "@/components/project-card"
 import SectionHeader from "@/components/section-header"
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Projects",
+    description: "Explore active and past projects from our teams.",
+};
 
 export default function Page() {
   const all = projectsData as Project[]

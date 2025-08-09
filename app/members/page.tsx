@@ -1,6 +1,12 @@
 import members from "@/data/members.json";
 import type { Member } from "@/lib/types";
 import MemberSection from "@/components/member-section";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Members",
+    description: "Leadership, project leads, members and alumni.",
+};
 
 export default function Page() {
 	const all = members as Member[];

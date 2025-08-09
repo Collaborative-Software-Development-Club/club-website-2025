@@ -1,10 +1,10 @@
 {
-  "siteName": "CSDC",
-  "footer": {
-    "discordUrl": "https://discord.gg/your-invite-code",
-    "githubUrl": "https://github.com/your-org",
-    "email": "csdc@osu.edu",
-    "constitutionUrl": "https://example.com/constitution.pdf",
-    "studentOrgUrl": "https://activities.osu.edu/involvement/student_organizations"
-  }
+	"siteName": "Collaborative Software Development Club",
+	"footer": {
+		"discordUrl": "https://discord.gg/ZU8fCvceQJ",
+		"githubUrl": "https://github.com/Collaborative-Software-Development-Club",
+		"email": "",
+		"constitutionUrl": "",
+		"studentOrgUrl": "https://activities.osu.edu/involvement/student_organizations/find_a_student_org?i=6202"
+	}
 }
