@@ -6,7 +6,7 @@ import site from "@/data/site.json"
 import { Button } from "@/components/ui/button"
 import BrandButton from "@/components/brand-button"
 import { Menu } from "lucide-react"
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 
 const nav = [
   { title: "Home", href: "/" },
@@ -18,21 +18,24 @@ export default function SiteHeader() {
   const pathname = usePathname()
 
   return (
-    <header className="w-full border-b border-white/10 bg-black/40 backdrop-blur supports-[backdrop-filter]:bg-black/30 sticky top-0 z-50">
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+    <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-black/40 backdrop-blur supports-[backdrop-filter]:bg-black/30">
+      <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
           <img src="/logo.svg" alt="CSDC at Ohio State logo" className="h-6 w-auto" />
-          <span className="font-semibold text-white">{site.siteName}</span>
+          <span className="text-white">{site.siteName}</span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden items-center gap-6 md:flex" aria-label="Primary">
           {nav.map((item) => {
             const active = pathname === item.href
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-sm transition-colors ${active ? "text-white font-medium" : "text-zinc-300 hover:text-white"}`}
+                aria-current={active ? "page" : undefined}
+                className={["text-sm transition-colors", active ? "text-white" : "text-zinc-300 hover:text-white"].join(
+                  " ",
+                )}
               >
                 {item.title}
               </Link>
@@ -48,6 +51,7 @@ export default function SiteHeader() {
           </BrandButton>
         </div>
 
+        {/* Mobile menu */}
         <div className="md:hidden">
           <Sheet>
             <SheetTrigger asChild>
@@ -55,25 +59,51 @@ export default function SiteHeader() {
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="bg-[#0b0b0f] border-l border-white/10">
-              <SheetHeader>
-                <SheetTitle className="text-white">{site.siteName}</SheetTitle>
-              </SheetHeader>
-              <div className="mt-4 flex flex-col gap-3">
-                {nav.map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className={`text-base ${pathname === item.href ? "font-medium text-white" : "text-zinc-300 hover:text-white"}`}
-                  >
-                    {item.title}
-                  </Link>
-                ))}
-                <BrandButton asChild className="mt-2">
-                  <Link href={site.footer.discordUrl} target="_blank" rel="noreferrer">
-                    Join Discord
-                  </Link>
-                </BrandButton>
+
+            {/* Improved spacing and structure */}
+            <SheetContent side="right" className="border-l border-white/10 bg-[#0b0b0f] p-0">
+              {/* Brand row */}
+              <div className="flex items-center gap-3 border-b border-white/10 p-4">
+                <img src="/logo.svg" alt="CSDC at Ohio State logo" className="h-6 w-auto" />
+                <SheetHeader className="p-0">
+                  <SheetTitle className="text-white">{site.siteName}</SheetTitle>
+                </SheetHeader>
+              </div>
+
+              {/* Nav list */}
+              <div className="flex h-full flex-col">
+                <nav className="px-4 py-3" role="navigation" aria-label="Mobile">
+                  <ul className="flex flex-col gap-1">
+                    {nav.map((item) => {
+                      const active = pathname === item.href
+                      return (
+                        <li key={item.href}>
+                          <SheetClose asChild>
+                            <Link
+                              href={item.href}
+                              aria-current={active ? "page" : undefined}
+                              className={[
+                                "block w-full rounded-md px-3 py-3 text-base transition-colors",
+                                active ? "bg-white/5 text-white" : "text-zinc-300 hover:bg-white/5 hover:text-white",
+                              ].join(" ")}
+                            >
+                              {item.title}
+                            </Link>
+                          </SheetClose>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </nav>
+
+                {/* Pinned CTA with safe-area padding */}
+                <div className="mt-auto p-4 pb-[env(safe-area-inset-bottom)]">
+                  <BrandButton asChild className="w-full">
+                    <a href={site.footer.discordUrl} target="_blank" rel="noreferrer">
+                      Join Discord
+                    </a>
+                  </BrandButton>
+                </div>
               </div>
             </SheetContent>
           </Sheet>
