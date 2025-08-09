@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "title": "Build software. Together.",
+    "subtitle": "Collaborative Software Development Club at The Ohio State University. Hands-on projects, peer mentorship, and teamwork\u2014no dues, all experience levels welcome."
+  },
+  "highlights": [
+    {
+      "title": "Hands-on projects",
+      "description": "Work on real-world applications in teams led by student project leads."
+    },
+    {
+      "title": "Peer mentorship",
+      "description": "Grow your skills through code reviews, pair programming, and workshops."
+    },
+    { "title": "Teamwork first", "description": "Practice modern dev workflows: issues, PRs, sprints, and demos." },
+    {
+      "title": "No dues",
+      "description": "Open to all OSU students. We provide the structure; you provide the curiosity."
+    }
+  ],
+  "focusAreas": ["Web", "Mobile", "Game", "AI/ML", "Data/Cloud", "Member-driven ideas"],
+  "featuredProjectIds": ["isometric-shooter", "recipe-app", "full-stack-blog-app"]
+}

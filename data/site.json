@@ -1,0 +1,10 @@
+{
+  "siteName": "CSDC",
+  "footer": {
+    "discordUrl": "https://discord.gg/your-invite-code",
+    "githubUrl": "https://github.com/your-org",
+    "email": "csdc@osu.edu",
+    "constitutionUrl": "https://example.com/constitution.pdf",
+    "studentOrgUrl": "https://activities.osu.edu/involvement/student_organizations"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "categories": ["Web", "Mobile", "Game", "AI/ML", "Tools"],
+  "statuses": ["Active", "Paused", "Completed"],
+  "semesters": ["Autumn 2023", "Spring 2024", "Summer 2024", "Autumn 2024", "Spring 2025", "Autumn 2025"]
+}

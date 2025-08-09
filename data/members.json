@@ -1,0 +1,53 @@
+[
+  {
+    "id": "alice",
+    "name": "Alice Johnson",
+    "roles": ["Executive Board: President"],
+    "blurb": "Focused on mobile UX and accessibility.",
+    "photoUrl": "/placeholder.svg?height=96&width=96",
+    "links": { "github": "https://github.com/alice", "linkedin": "https://linkedin.com/in/alice" },
+    "affiliations": ["CampusNav"]
+  },
+  {
+    "id": "bob",
+    "name": "Bob Martinez",
+    "roles": ["Executive Board: VP", "Project Lead: Buckeye Bites"],
+    "blurb": "Full-stack dev and mentor.",
+    "photoUrl": "/placeholder.svg?height=96&width=96",
+    "links": { "github": "https://github.com/bob" },
+    "affiliations": ["Buckeye Bites"]
+  },
+  {
+    "id": "chris",
+    "name": "Chris Lee",
+    "roles": ["Member: Full-stack"],
+    "photoUrl": "/placeholder.svg?height=96&width=96",
+    "links": { "github": "https://github.com/chris" },
+    "affiliations": ["Buckeye Bites"]
+  },
+  {
+    "id": "dan",
+    "name": "Dan Patel",
+    "roles": ["Member: Mobile"],
+    "photoUrl": "/placeholder.svg?height=96&width=96",
+    "links": { "github": "https://github.com/dan" },
+    "affiliations": ["CampusNav"]
+  },
+  {
+    "id": "eve",
+    "name": "Eve Kim",
+    "roles": ["Project Lead: Game Jam"],
+    "blurb": "Pixel art enthusiast.",
+    "photoUrl": "/placeholder.svg?height=96&width=96",
+    "links": { "github": "https://github.com/eve" },
+    "affiliations": ["Roguelike Jam"]
+  },
+  {
+    "id": "frank",
+    "name": "Frank Zhang",
+    "roles": ["Member: Gameplay"],
+    "photoUrl": "/placeholder.svg?height=96&width=96",
+    "affiliations": ["Roguelike Jam"],
+    "alumni": true
+  }
+]
