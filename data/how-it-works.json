@@ -1,32 +1,49 @@
 {
-  "membership": {
-    "eligibility": [
-      "OSU student (undergrad or grad)",
-      "Attend at least 4 meetings per semester",
-      "Contribute code or equivalent approved by a Project Lead",
-      "No dues"
-    ],
-    "pathNote": "New members join any project team after pitches and onboarding. We match interests and experience, but all levels are welcome."
-  },
-  "meetings": {
-    "firstMeeting": "Project pitches + onboarding to tools and workflows.",
-    "mandatory": "Weekly updates + team work time documented via issues/PRs.",
-    "optional": "Extra time for teams; can be made mandatory by team majority.",
-    "social": "Leisure events to build community; no project work expected."
-  },
-  "attendance": {
-    "summary": "No more than 3 unexcused absences. Request excusal before a meeting. Make up missed work as agreed with your Lead.",
-    "points": [
-      "Request excusal via Discord or issue comments",
-      "Make up missed work in the next sprint",
-      "Communicate early if blocked"
-    ]
-  },
-  "leadership": {
-    "executiveBoard": "President, VP, Treasurer, Secretary, Outreach, and others as needed.",
-    "projectLeads": "Student Leads manage scope, sprints, reviews, and mentorship."
-  },
-  "elections": {
-    "summary": "Spring elections each year. Eligibility: President \u2265 2 semesters experience; other Executive Board roles \u2265 1 semester."
-  }
+	"membership": {
+		"eligibility": [
+			"OSU student (undergrad or grad)",
+			"Attend at least 4 meetings per semester",
+			"Contribute code or equivalent approved by a Project Lead",
+			"No dues"
+		],
+		"pathNote": "New members join any project team after pitches and onboarding. We match interests and experience, but all levels are welcome."
+	},
+	"meetings": {
+		"firstMeeting": "Project pitches + onboarding to tools and workflows.",
+		"mandatory": "Weekly updates + team work time documented via issues/PRs.",
+		"optional": "Extra time for teams; can be made mandatory by team majority.",
+		"social": "Leisure events to build community; no project work expected."
+	},
+	"attendance": {
+		"summary": "No more than 3 unexcused absences. Request excusal before a meeting. Make up missed work as agreed with your Lead.",
+		"points": [
+			"Request excusal via Discord or issue comments",
+			"Make up missed work in the next sprint",
+			"Communicate early if blocked"
+		]
+	},
+	"leadership": {
+		"executiveBoard": "President, VP, Treasurer, Secretary, Outreach, and others as needed.",
+		"projectLeads": "Student Leads manage scope, sprints, reviews, and mentorship."
+	},
+	"elections": {
+		"summary": "Spring elections each year. Eligibility: President \u2265 2 semesters experience; other Executive Board roles \u2265 1 semester."
+	},
+	"timeline": [
+		{
+			"title": "Opening meeting",
+			"desc": "Introduction to the club and project pitches.",
+			"icon": "Users"
+		},
+		{
+			"title": "Build weekly with your team",
+			"desc": "Weekly updates, team work time and project discussion.",
+			"icon": "CalendarCheck2"
+		},
+		{
+			"title": "Leadership & elections",
+			"desc": "President, VP, Treasurer, Secretary, Outreach, and others as needed. Spring elections each year.",
+			"icon": "Gavel"
+		}
+	]
 }

@@ -1,53 +1,59 @@
 [
-  {
-    "id": "alice",
-    "name": "Alice Johnson",
-    "roles": ["Executive Board: President"],
-    "blurb": "Focused on mobile UX and accessibility.",
-    "photoUrl": "/placeholder.svg?height=96&width=96",
-    "links": { "github": "https://github.com/alice", "linkedin": "https://linkedin.com/in/alice" },
-    "affiliations": ["CampusNav"]
-  },
-  {
-    "id": "bob",
-    "name": "Bob Martinez",
-    "roles": ["Executive Board: VP", "Project Lead: Buckeye Bites"],
-    "blurb": "Full-stack dev and mentor.",
-    "photoUrl": "/placeholder.svg?height=96&width=96",
-    "links": { "github": "https://github.com/bob" },
-    "affiliations": ["Buckeye Bites"]
-  },
-  {
-    "id": "chris",
-    "name": "Chris Lee",
-    "roles": ["Member: Full-stack"],
-    "photoUrl": "/placeholder.svg?height=96&width=96",
-    "links": { "github": "https://github.com/chris" },
-    "affiliations": ["Buckeye Bites"]
-  },
-  {
-    "id": "dan",
-    "name": "Dan Patel",
-    "roles": ["Member: Mobile"],
-    "photoUrl": "/placeholder.svg?height=96&width=96",
-    "links": { "github": "https://github.com/dan" },
-    "affiliations": ["CampusNav"]
-  },
-  {
-    "id": "eve",
-    "name": "Eve Kim",
-    "roles": ["Project Lead: Game Jam"],
-    "blurb": "Pixel art enthusiast.",
-    "photoUrl": "/placeholder.svg?height=96&width=96",
-    "links": { "github": "https://github.com/eve" },
-    "affiliations": ["Roguelike Jam"]
-  },
-  {
-    "id": "frank",
-    "name": "Frank Zhang",
-    "roles": ["Member: Gameplay"],
-    "photoUrl": "/placeholder.svg?height=96&width=96",
-    "affiliations": ["Roguelike Jam"],
-    "alumni": true
-  }
+	{
+		"id": "sam-baccei",
+		"name": "Sam Baccei",
+		"blurb": "add description here",
+		"photoUrl": "/placeholder.svg?height=96&width=96",
+		"links": {
+			"github": "https://github.com/ldfMion",
+			"linkedin": "https://www.linkedin.com/in/lorenzo-mion-00b078234/"
+		},
+		"roles": ["President"]
+	},
+	{
+		"id": "lorenzo-mion",
+		"name": "Lorenzo Mion",
+		"blurb": "Lorenzo, an international student from Brazil, is a sophomore Computer Science and Engineering major serving as Web Project Lead. Lorenzo is familiar with a range of programming languages, but his expertise lies in web development, particularly with technologies like React and Next.js. As the project lead, he is dedicated to fostering a dynamic and engaging learning environment where he and other engineers can hone their web development skills by working on diverse projects. Additionally, Lorenzo is also a member of Ohio State’s varsity fencing team and Brazil's national team",
+		"photoUrl": "/lorenzo-mion.png",
+		"links": {
+			"github": "https://github.com/ldfMion",
+			"linkedin": "https://www.linkedin.com/in/lorenzo-mion-00b078234/"
+		},
+		"roles": ["Vice President", "Project Lead"]
+	},
+	{
+		"id": "trevor-kosht",
+		"name": "Trevor Kosht",
+		"photoUrl": "/trevor-kosht.png",
+		"links": {
+			"github": "https://github.com/chris"
+		},
+		"blurb": "Trevor has a special interest in virtual reality and aspires to build a future where people can live virtually. His skills as a designer are showcased as hir role as lead designer on the unity projects. His role as secretary allows him to foster his talents for scheduling and management. He hopes to build an inclusive environment for anyone to experience the joy of problem solving in a collaborative manner within the collaborative software development club.",
+		"roles": ["Project Lead"]
+	},
+	{
+		"id": "caleb",
+		"name": "Caleb",
+		"photoUrl": "/placeholder.svg?height=96&width=96",
+		"links": {
+			"github": "https://github.com/dan"
+		},
+		"roles": ["Social Coordinator"]
+	},
+	{
+		"id": "caleb-cope",
+		"name": "Caleb Cope",
+		"blurb": "something here",
+		"photoUrl": "/placeholder.svg?height=96&width=96",
+		"links": {
+			"github": "some url"
+		},
+		"roles": ["Secretary"]
+	},
+	{
+		"id": "tristan",
+		"name": "Tristan",
+		"photoUrl": "/placeholder.svg?height=96&width=96",
+		"roles": ["Treasurer"]
+	}
 ]
