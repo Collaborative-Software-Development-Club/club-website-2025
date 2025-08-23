@@ -14,30 +14,30 @@ To get a local copy up and running, follow these simple steps.
 
 1. Clone the repo
 
-    ```sh
+    \`\`\`sh
 
 
     git clone https://github.com/Collaborative-Software-Development-Club/club-website-2025.git
 
 
-    ```
+    \`\`\`
 
 2. Install NPM packages
 
-    ```sh
+    \`\`\`sh
 
 
     pnpm install
 
 
-    ```
+    \`\`\`
 
 3. Start the development server
 
-    ```sh
+    \`\`\`sh
 
 
     pnpm run dev
 
 
-    ```
+    \`\`\`
