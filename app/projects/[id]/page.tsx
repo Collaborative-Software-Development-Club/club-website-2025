@@ -27,6 +27,12 @@ export function generateMetadata({
 	};
 }
 
+export function generateStaticParams() {
+	return (projects as Project[]).map(p => ({
+		id: p.id,
+	}));
+}
+
 export default function Page({ params }: { params: { id: string } }) {
 	const project = (projects as Project[]).find(p => p.id === params.id);
 	if (!project) return notFound();
