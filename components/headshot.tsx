@@ -1,23 +1,21 @@
-type HeadshotProps = {
+"use client"
+
+import { cn } from "@/lib/utils"
+
+interface HeadshotProps {
   filename?: string
   member: string
-  size?: "sm" | "md" | "lg"
+  className?: string
 }
 
-export function Headshot({ filename, member, size = "md" }: HeadshotProps) {
-  const sizeClasses = {
-    sm: "h-12 w-12",
-    md: "h-16 w-16",
-    lg: "h-20 w-20",
-  }
-
+export function Headshot({ filename, member, className }: HeadshotProps) {
   const imageSrc = filename ? `/headshots/${filename}` : "/headshots/member-headshot-placeholder.png"
 
   return (
     <img
       src={imageSrc || "/placeholder.svg"}
       alt={`${member} photo`}
-      className={`${sizeClasses[size]} rounded-full object-cover border border-white/10`}
+      className={cn("h-16 w-16 rounded-full object-cover border border-white/10", className)}
     />
   )
 }
