@@ -11,7 +11,6 @@ export default function ProjectCard({
 }: {
   project: Project
 }) {
-  const img = project.thumbnail || "/cs-club-thumbnail.png"
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -24,12 +23,14 @@ export default function ProjectCard({
           <CardTitle className="line-clamp-1">{project.title}</CardTitle>
         </CardHeader>
         <CardContent className="flex-1">
-          <img
-            src={img || "/placeholder.svg"}
-            alt={`${project.title} thumbnail`}
-            className="w-full h-40 object-cover rounded-md border border-white/10"
-          />
-          <p className="mt-3 text-sm text-muted-foreground line-clamp-3">{project.description}</p>
+          {project.thumbnail && (
+            <img
+              src={project.thumbnail || "/placeholder.svg"}
+              alt={`${project.title} thumbnail`}
+              className="w-full h-40 object-cover rounded-md border border-white/10 mb-3"
+            />
+          )}
+          <p className="text-sm text-muted-foreground line-clamp-3">{project.description}</p>
           <div className="mt-3 flex flex-wrap gap-2">
             <Badge variant="secondary">{project.category}</Badge>
             <Badge className="bg-[#DE3626] hover:bg-[#c82f21] text-white">{project.status}</Badge>
