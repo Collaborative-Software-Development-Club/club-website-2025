@@ -18,11 +18,10 @@ export default function MemberDialog({ member, open, onOpenChange }: MemberDialo
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-2xl border-white/10 bg-zinc-900/95 backdrop-blur-sm">
         <DialogHeader>
-          <DialogTitle className="text-white sr-only">{member.name}</DialogTitle>
+          <DialogTitle className="text-white">{member.name}</DialogTitle>
         </DialogHeader>
 
         <div className="flex flex-col sm:flex-row gap-6">
-          {/* Large photo */}
           <div className="flex-shrink-0 mx-auto sm:mx-0">
             <div className="relative">
               <Headshot filename={member.photoUrl} member={member.name} className="w-32 h-32 sm:w-40 sm:h-40" />
@@ -30,17 +29,13 @@ export default function MemberDialog({ member, open, onOpenChange }: MemberDialo
             </div>
           </div>
 
-          {/* Content */}
           <div className="flex-1 space-y-4">
-            <div>
-              <h2 className="text-2xl font-bold text-white mb-2">{member.name}</h2>
-              <div className="flex flex-wrap gap-2">
-                {member.roles.map((role) => (
-                  <Badge key={role} variant="secondary" className="bg-[#DE3626]/10 text-[#DE3626] border-[#DE3626]/20">
-                    {role}
-                  </Badge>
-                ))}
-              </div>
+            <div className="flex flex-wrap gap-2">
+              {member.roles.map((role) => (
+                <Badge key={role} variant="secondary" className="bg-[#DE3626]/10 text-[#DE3626] border-[#DE3626]/20">
+                  {role}
+                </Badge>
+              ))}
             </div>
 
             {member.blurb && (
@@ -63,7 +58,6 @@ export default function MemberDialog({ member, open, onOpenChange }: MemberDialo
               </div>
             )}
 
-            {/* Links */}
             <div className="flex gap-4 pt-2">
               {member.links?.github && (
                 <Link
