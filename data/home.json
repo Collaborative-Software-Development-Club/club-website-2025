@@ -19,8 +19,8 @@
 	],
 	"focusAreas": ["Web", "Mobile", "Gam"],
 	"featuredProjectIds": [
-		"isometric-shooter",
+		"ai-resume-builder",
 		"recipe-app",
-		"full-stack-blog-app"
+		"networked-coop-boss"
 	]
 }

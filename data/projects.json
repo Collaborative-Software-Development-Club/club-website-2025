@@ -1,97 +1,107 @@
 [
-  {
-    "id": "isometric-shooter",
-    "title": "Isometric Shooter",
-    "description": "During Fall23 we worked on a isometric shooter with waves of enemies, multiple guns and BLOOM",
-    "category": "Game",
-    "status": "Completed",
-    "semester": "Fall 2023",
-    "techStack": ["C#", "Unity"],
-    "links": {
-      "github": "https://github.com/Collaborative-Software-Development-Club/Fall2023-UnityProject"
-    },
-    "media": [],
-    "team": [],
-    "timeline": "August 10, 2023 → December 20, 2023",
-    "thumbnail": "/cs-club-thumbnail.png"
-  },
-  {
-    "id": "club-website",
-    "title": "Club Website",
-    "description": "During the summer of 2024, we revamped our website focusing on better design. It uses Next.js with TypeScript and uses mostly Static Site Generation (SSG) from Next.js to generate all pages at build time. It also features a custom Content Management System (CMS) that automatically fetches information from organization's Notion databases to build the website.",
-    "category": "Web",
-    "status": "Completed",
-    "semester": "Summer 2024",
-    "techStack": ["Next.js", "React.js", "TypeScript"],
-    "links": {
-      "github": "https://github.com/Collaborative-Software-Development-Club/NewClubWebsite"
-    },
-    "media": [],
-    "team": [],
-    "timeline": "June 1, 2024 → August 21, 2024",
-    "thumbnail": "/cs-club-thumbnail.png"
-  },
-  {
-    "id": "full-stack-blog-app",
-    "title": "Full-Stack Blog App",
-    "description": "During SP24, we built a blog app using React for the front-end and MongoDB for the Back-End. It includes a main feed, pages for each author, and a page for each blog with a comment section.",
-    "category": "Web",
-    "status": "Completed",
-    "semester": "Spring 2024",
-    "techStack": ["Express.js", "JavaScript", "MongoDB", "React.js"],
-    "links": {
-      "github": "https://github.com/Collaborative-Software-Development-Club/ReactNewsBlog"
-    },
-    "media": [],
-    "team": [],
-    "timeline": "January 31, 2024 → April 30, 2024",
-    "thumbnail": "/cs-club-thumbnail.png"
-  },
-  {
-    "id": "recipe-app",
-    "title": "RecipeApp",
-    "description": "A cross-platform mobile application built with .NET MAUI that allows users to efficiently manage their recipes. The app features intuitive navigation for adding, editing, and organizing recipes with detailed ingredients, instructions, and images. Users can categorize recipes, filter by cuisine or dietary preferences, and generate shopping lists. The app also includes a favorites section for quick access to preferred dishes and supports cloud synchronization to ensure recipes are accessible across devices.",
-    "category": "Mobile",
-    "status": "Active",
-    "semester": "Spring 2025",
-    "techStack": [".NET", "C#", "MAUI"],
-    "links": {
-      "github": "https://github.com/Collaborative-Software-Development-Club/Spring-2025-Mobile-App"
-    },
-    "media": [],
-    "team": [],
-    "timeline": "January 8, 2025"
-  },
-  {
-    "id": "tower-defense",
-    "title": "Tower Defense",
-    "description": "During SP24, we worked on a tower control game developed with the Unity Engine.",
-    "category": "Game",
-    "status": "Completed",
-    "semester": "Spring 2024",
-    "techStack": ["C#", "Unity"],
-    "links": {
-      "github": "https://github.com/Collaborative-Software-Development-Club/Spring2024-UnityProject"
-    },
-    "media": [],
-    "team": [],
-    "timeline": "January 31, 2024 → April 30, 2024",
-    "thumbnail": "/cs-club-thumbnail.png"
-  },
-  {
-    "id": "discord-bot",
-    "title": "Discord Bot",
-    "description": "During AU23, we build a discord bot that scrapes steam. It can be used for various purposes, including gathering information about games, prices, reviews, and more.",
-    "category": "Tools",
-    "status": "Completed",
-    "semester": "Autumn 2023",
-    "techStack": ["Python"],
-    "links": {
-      "github": "https://github.com/Collaborative-Software-Development-Club/SteamScrapeBot"
-    },
-    "media": [],
-    "team": [],
-    "timeline": "August 10, 2023 → December 20, 2023",
-    "thumbnail": "/cs-club-thumbnail.png"
-  }
+	{
+		"id": "ai-resume-builder",
+		"title": "AI Resume Builder",
+		"description": "This web app allows users to create multiple resumes, picking and chosing various experiences and projects, with AI enhancement to make sure bullet points are optimzed with proper structure and keywords. ",
+		"category": "Web",
+		"status": "Completed",
+		"semester": "Fall 2024 and Spring 2025",
+		"techStack": [
+			"React.js",
+			"Tailwind",
+			"Java",
+			"Spring Boot",
+			"MongoDB",
+			"ShadCn",
+			"Azure AI"
+		],
+		"links": {
+			"github": "https://github.com/Collaborative-Software-Development-Club/AU24-Web-Resume-Builder"
+		},
+		"media": [],
+		"thumbnail": "/projects/resume-builder.png"
+	},
+	{
+		"id": "recipe-app",
+		"title": "RecipeApp",
+		"description": "A cross-platform mobile application built with .NET MAUI that allows users to efficiently manage their recipes. The app features intuitive navigation for adding, editing, and organizing recipes with detailed ingredients, instructions, and images. Users can categorize recipes, filter by cuisine or dietary preferences, and generate shopping lists. The app also includes a favorites section for quick access to preferred dishes and supports cloud synchronization to ensure recipes are accessible across devices.",
+		"category": "Mobile",
+		"status": "Active",
+		"semester": "Spring 2025",
+		"techStack": [".NET", "C#", "MAUI"],
+		"links": {
+			"github": "https://github.com/Collaborative-Software-Development-Club/Spring-2025-Mobile-App"
+		},
+		"media": [],
+		"team": [],
+		"thumbnail": "/projects/recipe-app.png"
+	},
+	{
+		"id": "networked-coop-boss",
+		"title": "Networket Co-op Boss Battler",
+		"description": "Fully networked co op boss battler. Fight as a team of 4 to take down souls like bosses.",
+		"category": "Game",
+		"status": "Completed",
+		"semester": "Spring 2025",
+		"techStack": ["C#", "Unity"],
+		"links": {
+			"github": "https://github.com/Collaborative-Software-Development-Club/Spring-2025-Unity-Game"
+		}
+	},
+	{
+		"id": "isometric-shooter",
+		"title": "Isometric Shooter",
+		"description": "During Fall23 we worked on a isometric shooter with waves of enemies, multiple guns and BLOOM",
+		"category": "Game",
+		"status": "Completed",
+		"semester": "Fall 2023",
+		"techStack": ["C#", "Unity"],
+		"links": {
+			"github": "https://github.com/Collaborative-Software-Development-Club/Fall2023-UnityProject"
+		},
+		"media": [],
+		"team": []
+	},
+	{
+		"id": "full-stack-blog-app",
+		"title": "Full-Stack Blog App",
+		"description": "During SP24, we built a blog app using React for the front-end and MongoDB for the Back-End. It includes a main feed, pages for each author, and a page for each blog with a comment section.",
+		"category": "Web",
+		"status": "Completed",
+		"semester": "Spring 2024",
+		"techStack": ["Express.js", "JavaScript", "MongoDB", "React.js"],
+		"links": {
+			"github": "https://github.com/Collaborative-Software-Development-Club/ReactNewsBlog"
+		},
+		"media": [],
+		"team": []
+	},
+	{
+		"id": "tower-defense",
+		"title": "Tower Defense",
+		"description": "During SP24, we worked on a tower control game developed with the Unity Engine.",
+		"category": "Game",
+		"status": "Completed",
+		"semester": "Spring 2024",
+		"techStack": ["C#", "Unity"],
+		"links": {
+			"github": "https://github.com/Collaborative-Software-Development-Club/Spring2024-UnityProject"
+		},
+		"media": [],
+		"team": []
+	},
+	{
+		"id": "discord-bot",
+		"title": "Discord Bot",
+		"description": "During AU23, we build a discord bot that scrapes steam. It can be used for various purposes, including gathering information about games, prices, reviews, and more.",
+		"category": "Tools",
+		"status": "Completed",
+		"semester": "Autumn 2023",
+		"techStack": ["Python"],
+		"links": {
+			"github": "https://github.com/Collaborative-Software-Development-Club/SteamScrapeBot"
+		},
+		"media": [],
+		"team": []
+	}
 ]

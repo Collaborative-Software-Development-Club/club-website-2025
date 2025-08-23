@@ -30,7 +30,6 @@ export type Project = {
 	};
 	media?: ProjectMedia[];
 	team: ProjectTeamMember[];
-	timeline?: string;
 	thumbnail?: string;
 };
 
