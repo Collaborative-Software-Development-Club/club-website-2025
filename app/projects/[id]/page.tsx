@@ -7,20 +7,20 @@ import { notFound } from "next/navigation"
 import BrandButton from "@/components/brand-button"
 import ProjectTimeline from "@/components/project-timeline"
 import { Github, ExternalLink } from "lucide-react"
-import type { Metadata } from "next";
+import type { Metadata } from "next"
 
 export function generateMetadata({ params }: { params: { id: string } }): Metadata {
-    const all = projects as Project[];
-    const project = all.find(p => p.id === params.id);
+  const all = projects as Project[]
+  const project = all.find((p) => p.id === params.id)
 
-    if (!project) {
-        return {};
-    }
+  if (!project) {
+    return {}
+  }
 
-    return {
-        title: project.title,
-        description: project.description,
-    };
+  return {
+    title: project.title,
+    description: project.description,
+  }
 }
 
 export default function Page({ params }: { params: { id: string } }) {
@@ -41,25 +41,20 @@ export default function Page({ params }: { params: { id: string } }) {
 
       <section className="grid gap-8 lg:grid-cols-3">
         <div className="lg:col-span-2 space-y-6">
-          <img
-            src={
-              project.thumbnail || "/placeholder.svg?height=360&width=720&query=Project%20hero%20image%20placeholder"
-            }
-            alt={`${project.title} hero`}
-            className="w-full h-64 md:h-80 object-cover rounded-lg border border-white/10"
-          />
+          {project.thumbnail && (
+            <img
+              src={project.thumbnail || "/placeholder.svg"}
+              alt={`${project.title} hero`}
+              className="w-full h-64 md:h-80 object-cover rounded-lg border border-white/10"
+            />
+          )}
 
           <Card className="border-white/10 bg-white/5">
             <CardHeader>
               <CardTitle>Overview</CardTitle>
             </CardHeader>
             <CardContent className="space-y-3 text-zinc-200">
-              <p>
-                <span className="font-medium text-white">Goals:</span> {project.overview.goals}
-              </p>
-              <p>
-                <span className="font-medium text-white">Audience:</span> {project.overview.audience}
-              </p>
+              <p>{project.description}</p>
               <div>
                 <span className="font-medium text-white">Tech stack:</span>
                 <div className="mt-2 flex flex-wrap gap-2">
@@ -76,7 +71,7 @@ export default function Page({ params }: { params: { id: string } }) {
             </CardContent>
           </Card>
 
-          {project.media && project.media.length > 0 ? (
+          {project.media && project.media.length > 0 && (
             <Card className="border-white/10 bg-white/5">
               <CardHeader>
                 <CardTitle>Media</CardTitle>
@@ -96,7 +91,7 @@ export default function Page({ params }: { params: { id: string } }) {
                 )}
               </CardContent>
             </Card>
-          ) : null}
+          )}
         </div>
 
         <aside className="space-y-6">

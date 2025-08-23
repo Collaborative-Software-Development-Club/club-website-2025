@@ -2,36 +2,34 @@
   {
     "id": "isometric-shooter",
     "title": "Isometric Shooter",
-    "description": "During Fall23 we worked on an isometric shooter with waves of enemies, multiple guns and BLOOM",
+    "description": "During Fall23 we worked on a isometric shooter with waves of enemies, multiple guns and BLOOM",
     "category": "Game",
     "status": "Completed",
-    "semester": "Autumn 2023",
+    "semester": "Fall 2023",
     "techStack": ["C#", "Unity"],
-    "links": { "github": "https://github.com/Collaborative-Software-Development-Club/Fall2023-UnityProject" },
-    "team": [],
-    "overview": {
-      "goals": "Build a Unity isometric shooter featuring enemy waves and weapon variety.",
-      "audience": "Students interested in game development and Unity."
+    "links": {
+      "github": "https://github.com/Collaborative-Software-Development-Club/Fall2023-UnityProject"
     },
+    "media": [],
+    "team": [],
     "timeline": "August 10, 2023 → December 20, 2023",
-    "thumbnail": "/placeholder.svg?height=160&width=320"
+    "thumbnail": "/cs-club-thumbnail.png"
   },
   {
     "id": "club-website",
     "title": "Club Website",
-    "description": "During the summer of 2024, we revamped our website focusing on better design. It uses Next.js with TypeScript and uses mostly Static Site Generation (SSG) from Next.js to generate all pages at build time. It also features a custom Content Management System (CMS) that automatically fetches information from organization’s Notion databases to build the website.",
+    "description": "During the summer of 2024, we revamped our website focusing on better design. It uses Next.js with TypeScript and uses mostly Static Site Generation (SSG) from Next.js to generate all pages at build time. It also features a custom Content Management System (CMS) that automatically fetches information from organization's Notion databases to build the website.",
     "category": "Web",
     "status": "Completed",
     "semester": "Summer 2024",
     "techStack": ["Next.js", "React.js", "TypeScript"],
-    "links": { "github": "https://github.com/Collaborative-Software-Development-Club/NewClubWebsite" },
-    "team": [],
-    "overview": {
-      "goals": "Revamp the club site with a better design, SSG, and automated CMS from Notion.",
-      "audience": "Prospective and current members; partners interested in the club."
+    "links": {
+      "github": "https://github.com/Collaborative-Software-Development-Club/NewClubWebsite"
     },
+    "media": [],
+    "team": [],
     "timeline": "June 1, 2024 → August 21, 2024",
-    "thumbnail": "/placeholder.svg?height=160&width=320"
+    "thumbnail": "/cs-club-thumbnail.png"
   },
   {
     "id": "full-stack-blog-app",
@@ -41,14 +39,13 @@
     "status": "Completed",
     "semester": "Spring 2024",
     "techStack": ["Express.js", "JavaScript", "MongoDB", "React.js"],
-    "links": { "github": "https://github.com/Collaborative-Software-Development-Club/ReactNewsBlog" },
-    "team": [],
-    "overview": {
-      "goals": "Create a full-stack blog platform with feeds, author pages, and comments.",
-      "audience": "Students learning full-stack web development."
+    "links": {
+      "github": "https://github.com/Collaborative-Software-Development-Club/ReactNewsBlog"
     },
+    "media": [],
+    "team": [],
     "timeline": "January 31, 2024 → April 30, 2024",
-    "thumbnail": "/placeholder.svg?height=160&width=320"
+    "thumbnail": "/cs-club-thumbnail.png"
   },
   {
     "id": "recipe-app",
@@ -58,14 +55,12 @@
     "status": "Active",
     "semester": "Spring 2025",
     "techStack": [".NET", "C#", "MAUI"],
-    "links": { "github": "https://github.com/Collaborative-Software-Development-Club/Spring-2025-Mobile-App" },
-    "team": [],
-    "overview": {
-      "goals": "Build a cross-platform MAUI app for managing recipes with sync and organization tools.",
-      "audience": "Students interested in cross-platform mobile development."
+    "links": {
+      "github": "https://github.com/Collaborative-Software-Development-Club/Spring-2025-Mobile-App"
     },
-    "timeline": "January 8, 2025",
-    "thumbnail": "/placeholder.svg?height=160&width=320"
+    "media": [],
+    "team": [],
+    "timeline": "January 8, 2025"
   },
   {
     "id": "tower-defense",
@@ -75,30 +70,28 @@
     "status": "Completed",
     "semester": "Spring 2024",
     "techStack": ["C#", "Unity"],
-    "links": { "github": "https://github.com/Collaborative-Software-Development-Club/Spring2024-UnityProject" },
-    "team": [],
-    "overview": {
-      "goals": "Build a Unity tower defense game with core mechanics and levels.",
-      "audience": "Students learning gameplay programming and Unity."
+    "links": {
+      "github": "https://github.com/Collaborative-Software-Development-Club/Spring2024-UnityProject"
     },
+    "media": [],
+    "team": [],
     "timeline": "January 31, 2024 → April 30, 2024",
-    "thumbnail": "/placeholder.svg?height=160&width=320"
+    "thumbnail": "/cs-club-thumbnail.png"
   },
   {
     "id": "discord-bot",
     "title": "Discord Bot",
-    "description": "During AU23, we built a Discord bot that scrapes Steam. It can be used for various purposes, including gathering information about games, prices, reviews, and more.",
+    "description": "During AU23, we build a discord bot that scrapes steam. It can be used for various purposes, including gathering information about games, prices, reviews, and more.",
     "category": "Tools",
     "status": "Completed",
     "semester": "Autumn 2023",
     "techStack": ["Python"],
-    "links": { "github": "https://github.com/Collaborative-Software-Development-Club/SteamScrapeBot" },
-    "team": [],
-    "overview": {
-      "goals": "Create a Discord bot for scraping and querying Steam data.",
-      "audience": "Students interested in bots, scraping, and automation."
+    "links": {
+      "github": "https://github.com/Collaborative-Software-Development-Club/SteamScrapeBot"
     },
+    "media": [],
+    "team": [],
     "timeline": "August 10, 2023 → December 20, 2023",
-    "thumbnail": "/placeholder.svg?height=160&width=320"
+    "thumbnail": "/cs-club-thumbnail.png"
   }
 ]
