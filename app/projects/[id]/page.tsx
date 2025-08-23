@@ -9,6 +9,8 @@ import { Github, ExternalLink } from "lucide-react";
 import type { Metadata } from "next";
 import Image from "next/image";
 
+// temporary comment
+
 export function generateMetadata({
 	params,
 }: {
