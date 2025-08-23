@@ -2,17 +2,14 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import type { Member } from "@/lib/types";
+import { Headshot } from "./headshot";
 
 export default function MemberCard({ member }: { member: Member }) {
 	const img = member.photoUrl || "/member-headshot-placeholder.png";
 	return (
 		<Card className="h-full border-white/10 bg-white/5 hover:shadow-[0_0_20px_rgba(222,54,38,0.2)] transition-shadow">
 			<CardHeader className="flex flex-row items-center gap-4">
-				<img
-					src={img || "/placeholder.svg"}
-					alt={`${member.name} photo`}
-					className="h-16 w-16 rounded-full object-cover border border-white/10"
-				/>
+				<Headshot filename={member.photoUrl} member={member.name} />
 				<div>
 					<CardTitle className="text-base">{member.name}</CardTitle>
 					<div className="mt-1 flex flex-wrap gap-1">
