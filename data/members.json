@@ -26,7 +26,8 @@
 		"name": "Trevor Kosht",
 		"photoUrl": "/trevor-kosht.png",
 		"links": {
-			"linkedin": "https://www.linkedin.com/in/trevor-kosht-840953267/"
+			"linkedin": "https://www.linkedin.com/in/trevor-kosht-840953267/",
+			"github": "https://github.com/trevorkosht"
 		},
 		"blurb": "Trevor has a special interest in virtual reality and aspires to build a future where people can live virtually. His skills as a designer are showcased as hir role as lead designer on the unity projects. His role as secretary allows him to foster his talents for scheduling and management. He hopes to build an inclusive environment for anyone to experience the joy of problem solving in a collaborative manner within the collaborative software development club.",
 		"roles": ["Project Lead"]
@@ -36,7 +37,8 @@
 		"name": "Caleb Sanders",
 		"photoUrl": "/caleb-sanders.png",
 		"links": {
-			"linkedin": "https://www.linkedin.com/in/csanders04/"
+			"linkedin": "https://www.linkedin.com/in/csanders04/",
+			"github": "https://github.com/csandcastle"
 		},
 		"blurb": "Caleb has had a passion for computers since a young age. He started off with making small games in Scratch, but over time he's built up to creating complex games in both Unity and Godot. He's joined the club for the sake of further developing his skills in both programming and teamwork. His role as secretary allows him to make use of his love for data and organization to ensure that the club can operate with efficiency.",
 		"roles": ["Secretary"]
@@ -47,7 +49,8 @@
 		"blurb": "Description and image: Hi! I’m a junior Computer Engineering major from Toledo, Ohio, with a focus on game development and experience in web and mobile apps. I’m currently an iOS development intern at FOX Sports. Outside of school and work, I enjoy playing guitar, basketball, video games, and discovering new music. As the Social Coordinator of this club, my goal is to foster a connected and engaging environment where every member feels welcome and involved.",
 		"photoUrl": "/caleb-cope.png",
 		"links": {
-			"linkedin": "https://www.linkedin.com/in/calebcope/"
+			"linkedin": "https://www.linkedin.com/in/calebcope/",
+			"github": "https://github.com/calebcope"
 		},
 		"roles": ["Social Coordinator"]
 	},
@@ -57,7 +60,8 @@
 		"photoUrl": "/tristan-leedy.png",
 		"blurb": "Tristan is a rising senior majoring in Computer Science & Engineering and serves as Treasurer for CSDC. He frequently contributes to the Unity team as a hobbyist game developer but plans to pursue a career in backend engineering. His experience focuses on Java, test automation, and database/SQL setup. He hopes to continue fostering a supportive environment where developers of all skill levels feel welcome and confident collaborating on projects. An active member of OSU’s Run Club, Tristan has also recently discovered a love for pickleball.",
 		"links": {
-			"linkedin": "https://www.linkedin.com/in/eldenleedy/"
+			"linkedin": "https://www.linkedin.com/in/eldenleedy/",
+			"github": "https://github.com/eldenleedy"
 		},
 		"roles": ["Treasurer"]
 	}
