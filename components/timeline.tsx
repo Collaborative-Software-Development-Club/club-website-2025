@@ -46,7 +46,7 @@ export default function Timeline({ steps }: { steps: TimelineStep[] }) {
 			variants={timelineVariants}
 			viewport={{ once: true }}
 		>
-			<div className="absolute left-4 md:left-6 top-0 bottom-0 w-px bg-gradient-to-b from-[#DE3626]/60 via-white/10 to-transparent" />
+			<div className="absolute left-4 md:left-6 top-5 bottom-0 w-px bg-gradient-to-b from-[#DE3626]/60 via-white/10 to-transparent" />
 			<ol className="space-y-8">
 				{steps.map(step => {
 					const Icon = step.icon ? icons[step.icon] : null;
@@ -56,7 +56,7 @@ export default function Timeline({ steps }: { steps: TimelineStep[] }) {
 							className="relative pl-12 md:pl-16"
 							variants={stepVariants}
 						>
-							<span className="absolute left-0 md:left-2 top-1.5 h-8 w-8 rounded-full bg-[#DE3626]/20 border border-white/15 flex items-center justify-center">
+							<span className="absolute left-0 md:left-2 top-1.5 h-8 w-8 rounded-full bg-[#DE3626]/20 border border-white/15 flex items-center justify-center backdrop-blur-md">
 								<span
 									className="absolute h-10 w-10 rounded-full bg-[#DE3626]/20 blur-md"
 									aria-hidden
