@@ -9,7 +9,7 @@ import RotatingWords from "@/components/rotating-words";
 
 export default function HomeClient() {
 	return (
-		<section className="relative overflow-hidden lg:p-10 h-min-[80vh]">
+		<section className="relative overflow-hidden lg:p-10">
 			<div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-[#DE3626]/5 to-transparent" />
 			<motion.div
 				initial="hidden"
@@ -25,7 +25,7 @@ export default function HomeClient() {
 				}}
 				className="container mx-auto px-4 py-16 md:py-24 grid gap-6"
 			>
-				<div>
+				<div className="min-h-[50vh] flex flex-col justify-center items-start">
 					<motion.div
 						variants={{
 							hidden: { opacity: 0, y: 20 },

@@ -35,40 +35,42 @@ export default function SiteHeader() {
 					/>
 				</Link>
 
-				<nav
-					className="hidden items-center gap-6 md:flex"
-					aria-label="Primary"
-				>
-					{nav.map(item => {
-						const active = pathname === item.href;
-						return (
-							<Link
-								key={item.href}
-								href={item.href}
-								aria-current={active ? "page" : undefined}
-								className={[
-									"text-sm transition-colors",
-									active
-										? "text-white"
-										: "text-zinc-300 hover:text-white",
-								].join(" ")}
-							>
-								{item.title}
-							</Link>
-						);
-					})}
-				</nav>
+				<div className="hidde md:flex flex-row gap-4">
+					<nav
+						className=" items-center gap-6 flex "
+						aria-label="Primary"
+					>
+						{nav.map(item => {
+							const active = pathname === item.href;
+							return (
+								<Link
+									key={item.href}
+									href={item.href}
+									aria-current={active ? "page" : undefined}
+									className={[
+										"text-sm transition-colors",
+										active
+											? "text-white"
+											: "text-zinc-300 hover:text-white",
+									].join(" ")}
+								>
+									{item.title}
+								</Link>
+							);
+						})}
+					</nav>
 
-				<div className="hidden md:block">
-					<BrandButton asChild>
-						<Link
-							href={site.footer.discordUrl}
-							target="_blank"
-							rel="noreferrer"
-						>
-							Join Discord
-						</Link>
-					</BrandButton>
+					<div className="">
+						<BrandButton asChild>
+							<Link
+								href={site.footer.discordUrl}
+								target="_blank"
+								rel="noreferrer"
+							>
+								Join Discord
+							</Link>
+						</BrandButton>
+					</div>
 				</div>
 
 				{/* Mobile menu */}
